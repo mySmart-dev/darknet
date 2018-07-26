@@ -218,8 +218,8 @@ CvCapture* get_capture_webcam(int index) {
     CvCapture* cap = NULL;
     try {
         cap = (CvCapture*)new cv::VideoCapture(index);
-        //((cv::VideoCapture*)cap)->set(CV_CAP_PROP_FRAME_WIDTH, 1280);
-        //((cv::VideoCapture*)cap)->set(CV_CAP_PROP_FRAME_HEIGHT, 960);
+        ((cv::VideoCapture*)cap)->set(CV_CAP_PROP_FRAME_WIDTH, 1280);
+        ((cv::VideoCapture*)cap)->set(CV_CAP_PROP_FRAME_HEIGHT, 960);
     }
     catch (...) {
         std::cout << " Error: Web-camera " << index << " can't be opened! \n";

@@ -209,7 +209,7 @@ void demo(char *cfgfile, char *weightfile, float thresh, float hier_thresh, int 
     if(!prefix && !dont_show){
         cvNamedWindow("mySmart Live Cam Demo", CV_WINDOW_NORMAL);
         cvMoveWindow("mySmart Live Cam Demo", 0, 0);
-        cvResizeWindow("mySmart Live Cam Demo", 1280, 960);
+        cvResizeWindow("mySmart Live Cam Demo", 1920, 1080);
     }
 
     CvVideoWriter* output_video_writer = NULL;    // cv::VideoWriter output_video;
